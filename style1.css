@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ecf1f1;
+}
+
+:root {
+  --primary-color: #2d2727;
+  --light-primary-color: #2d2727;
+  --secondary-color: #8f43ee;
+  --text-color: #0e8388;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.up-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+  background-color: #464545;
+}
+.up-header .logos a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e8388;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.up-header .logos i {
+  font-size: 2.5rem;
+
+  margin-right: 1rem;
+}
+
+.search-form {
+  height: 2.5rem;
+  width: 30rem;
+}
+
+.search-form input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 90%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px #2d272709;
+}
+.search-form label {
+  margin-left: -2rem;
+
+  font-size: 1rem;
+}
+
+.support {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+}
+
+.support i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: green;
+}
+
+.support .supporting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--light-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+.header .navbar {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .navbar a,
+.header .account a {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.header .navbar a:hover,
+.header .account a:hover {
+  color: var(--text-color);
+}
+
+.header .account {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image img {
+  width: 100%;
+  height: 45rem;
+}
+
+.image {
+  height: 45rem;
+  position: relative;
+}
+
+.content {
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d27272f;
+  width: 100%;
+}
+.content p,
+.content h1 {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 2rem;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #0f0f0f;
+}
+.content p {
+  font-size: 2rem;
+  color: rgb(245, 245, 248);
+}
+
+.content a {
+  text-decoration: none;
+  font-size: 2rem;
+  /* background-color: #0e8388; */
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  color: azure;
+  border: 0.2rem solid rgb(203, 219, 219);
+  transition: 0.3s;
+}
+
+.content a:hover {
+  background-color: #0e8388;
+  color: azure;
+  font-size: 2.2rem;
+}
+
+.from-to {
+  background-color: #0e8388;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.from-to > span {
+  font-size: 1.5rem;
+  padding: 1rem 0 0 1rem;
+  display: inline-block;
+}
+.form-details form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form-details p {
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+.form-details select,
+.form-details input {
+  outline: none;
+  border: none;
+  height: 2.5rem;
+  width: 10rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+option {
+  outline: none;
+  border: none;
+}
+
+.hotels {
+  /* background-color: #ecf1f1; */
+  margin: 0 auto;
+  width: 1000px;
+  padding: 1rem;
+}
+
+.hotels > p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.hotels .popular-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px 1px rgba(97, 96, 94, 0.5);
+  border-left: 0.3rem solid rgb(238, 241, 14);
+}
+.room .room-details {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  color: rgb(12, 12, 12);
+  background-color: rgba(245, 242, 240, 0.5);
+  padding-left: 8px;
+  width: 100%;
+}
+
+.room .room-details img {
+  height: 100%;
+  width: 100%;
+}
+
+.room-details a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #0c0c0c;
+}
+
+.room-details span {
+  background-color: #ecf1f1;
+  padding: 0 0.5rem;
+  border-left: 0.3rem solid rgb(121, 119, 115);
+  border-top-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.deals {
+  width: 1000px;
+  /* background: #ecf1f1; */
+  margin: 0 auto;
+}
+.deals .pics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.deals > p {
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.deals .pics img {
+  width: 30rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.blogs {
+}
+
+.deals {
+  font-size: 1.5rem;
+}
+
+.footer {
+  margin: 0 auto;
+  display: flex;
+  /* width: 1000px; */
+  justify-content: space-between;
+  background-color: gray;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.footer > div > p {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: aliceblue;
+  border-left: 0.3rem solid black;
+  border-radius: 0.5rem 0 0.5rem 0;
+  background-color: #0e8388;
+  padding: 0.5rem;
+}
+
+.footer .company {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ccd3d3;
+  font-size: 1.3rem;
+}
+
+.footer .customer {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.follow .social {
+  display: flex;
+
+  justify-content: center;
+}
+
+.follow .social a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.email {
+}
+
+.email input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  width: 15rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: inline-block;
+  height: 3rem;
+}
+
+.email span {
+  display: inline-block;
+  background-color: red;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.email input,
+.email span {
+  height: 4rem;
+  font-size: 1.5rem;
+}
